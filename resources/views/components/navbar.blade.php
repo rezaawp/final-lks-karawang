@@ -12,7 +12,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="/polls" aria-current="page">Home <span
+                    <a class="nav-link text-black " href="/polls" aria-current="page">Home <span
                             class="visually-hidden"></span></a>
                 </li>
                 <li class="nav-item">

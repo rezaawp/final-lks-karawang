@@ -1,7 +1,7 @@
 @extends('layout.layoutadmin')
 
 @section('title')
-    Pollings
+    Daftar User
 @endsection
 
 @section('content')

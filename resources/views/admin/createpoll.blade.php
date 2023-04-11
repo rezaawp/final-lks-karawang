@@ -1,7 +1,7 @@
 @extends('layout.layoutadmin')
 
 @section('title')
-    Pollings
+    Buat Polling
 @endsection
 
 @section('content')
@@ -72,17 +72,16 @@
                     <label for="deadline" style="width: 100%">
                         Pilihan Polling :
                         <div id="choises-content">
-                            {{-- <input type="text" name="choises[]" id="choises"
+                            <input type="text" name="choises[]" id="choises"
                                 class="@error('choises')
                     {{ 'is-invalid' }}
                     @enderror form-control">
-                            <button>Clas</button>
                         </div>
                         @error('choises')
                             <div class="invalid-feedback">
                                 {{ $message }}
-                            </div> --}}
-                        {{-- @enderror --}}
+                            </div>
+                        @enderror
                     </label>
 
                     <div class="d-flex justify-content-end mt-3">
@@ -97,8 +96,6 @@
         </div>
 </div>
 
-
-
 <script type="text/javascript">
     const addInput = document.getElementById("add-input");
     const inputs = document.getElementById("choises-content");
@@ -106,23 +103,11 @@
     addInput.addEventListener("click", () => {
         const newElement = document.createElement("input");
         newElement.name = "choises[]";
-        newElement.classList.add("form-control");
-        newElement.classList.add("mt-3");
+        newElement.classList.add('form-control')
+        newElement.classList.add('mt-3')
         newElement.type = "text";
 
-        const button = document.createElement("button");
-        button.textContent = "Hapus";
-        button.addEventListener("click", () => {
-            newElement.remove();
-            button.remove();
-        });
-
-        const containerInput = document.createElement("div");
-        containerInput.classList.add("container-input");
-
-        containerInput.appendChild(button);
-        containerInput.appendChild(newElement);
-        inputs.appendChild(containerInput);
+        inputs.appendChild(newElement);
     });
 </script>
 @endsection
