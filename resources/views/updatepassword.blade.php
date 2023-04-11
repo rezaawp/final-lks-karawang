@@ -71,8 +71,13 @@
                             <p align="center">Jika anda ingin mendaftarkan akun ke admin, silahkan klik <a
                                     href="/izi" class="text-decoration-none">disini</a></p>
                         </small>
-                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary">Login</button> <br>
                     </div>
+                </form>
+                <form action="{{ route('logout') }}" method="post" style="width: 100%">
+                    @csrf
+                    @method('post')
+                    <button class="btn btn-danger" style="width: 100%">Logout</button>
                 </form>
             </div>
         </div>
