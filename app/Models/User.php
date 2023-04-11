@@ -18,8 +18,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'change_password',
+        'division_id',
         'name',
-        'email',
+        'username',
         'password',
     ];
 
@@ -41,4 +43,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    function divisi()
+    {
+        return $this->belongsTo(Division::class, 'division_id');
+    }
 }
