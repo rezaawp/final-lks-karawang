@@ -7,6 +7,11 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item">
+                    <span class="nav-link text-black" href="/polls" aria-current="page">Waktu saat ini :
+                        {{ date('Y-m-d h:i:s') }}</span>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link text-black" href="/polls" aria-current="page">Home <span
                             class="visually-hidden"></span></a>
                 </li>

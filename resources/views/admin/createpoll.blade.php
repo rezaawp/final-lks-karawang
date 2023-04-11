@@ -12,9 +12,9 @@
             </div>
         @enderror
 
-        @error('stored')
+        @if (session('stored'))
             <div class="alert alert-success" style="width: 30rem">
-                {{ $message }}
+                {{ session('stored') }}
             </div>
         @enderror
 
@@ -72,23 +72,22 @@
                     <label for="deadline" style="width: 100%">
                         Pilihan Polling :
                         <div id="choises-content">
-                            <input type="text" name="choises[]" id="choises"
+                            {{-- <input type="text" name="choises[]" id="choises"
                                 class="@error('choises')
                     {{ 'is-invalid' }}
                     @enderror form-control">
+                            <button>Clas</button>
                         </div>
                         @error('choises')
                             <div class="invalid-feedback">
                                 {{ $message }}
-                            </div>
-                        @enderror
+                            </div> --}}
+                        {{-- @enderror --}}
                     </label>
 
                     <div class="d-flex justify-content-end mt-3">
                         <button type="button" class="btn btn-primary btn-sm" id="add-input"> + Tambah Choise</button>
                     </div>
-
-
 
                     <div class="d-flex justify-content-center mt-3 flex-column">
                         <button class="btn btn-primary">Buat Polling</button>
@@ -96,20 +95,34 @@
                 </form>
             </div>
         </div>
-    </div>
+</div>
 
-    <script type="text/javascript">
-        const addInput = document.getElementById("add-input");
-        const inputs = document.getElementById("choises-content");
 
-        addInput.addEventListener("click", () => {
-            const newElement = document.createElement("input");
-            newElement.name = "choises[]";
-            newElement.classList.add('form-control')
-            newElement.classList.add('mt-3')
-            newElement.type = "text";
 
-            inputs.appendChild(newElement);
+<script type="text/javascript">
+    const addInput = document.getElementById("add-input");
+    const inputs = document.getElementById("choises-content");
+
+    addInput.addEventListener("click", () => {
+        const newElement = document.createElement("input");
+        newElement.name = "choises[]";
+        newElement.classList.add("form-control");
+        newElement.classList.add("mt-3");
+        newElement.type = "text";
+
+        const button = document.createElement("button");
+        button.textContent = "Hapus";
+        button.addEventListener("click", () => {
+            newElement.remove();
+            button.remove();
         });
-    </script>
+
+        const containerInput = document.createElement("div");
+        containerInput.classList.add("container-input");
+
+        containerInput.appendChild(button);
+        containerInput.appendChild(newElement);
+        inputs.appendChild(containerInput);
+    });
+</script>
 @endsection

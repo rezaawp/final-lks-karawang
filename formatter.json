@@ -1,189 +1,33 @@
-[
-    {
-        "id": 1,
-        "name": "Keagan Lubowitz",
-        "username": "scasper",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 1,
-        "change_password": 1,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:41:17.000000Z",
-        "divisi": {
-            "id": 1,
-            "name": "Payment",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
+{
+    "id": 6,
+    "title": "Title",
+    "description": "Desc",
+    "deadline": "2023-04-11 13:47:00",
+    "created_by": 11,
+    "deleted_at": null,
+    "created_at": "2023-04-11T06:46:33.000000Z",
+    "updated_at": "2023-04-11T06:46:33.000000Z",
+    "votes_count": 0,
+    "voted": 0,
+    "is_deadline": false,
+    "choises": [
+        {
+            "id": 16,
+            "choise": "1",
+            "poll_id": 6,
+            "created_at": "2023-04-11T06:46:33.000000Z",
+            "updated_at": "2023-04-11T06:46:33.000000Z",
+            "votes_count": 0,
+            "result_persentase": 0
+        },
+        {
+            "id": 17,
+            "choise": "2",
+            "poll_id": 6,
+            "created_at": "2023-04-11T06:46:33.000000Z",
+            "updated_at": "2023-04-11T06:46:33.000000Z",
+            "votes_count": 0,
+            "result_persentase": 0
         }
-    },
-    {
-        "id": 2,
-        "name": "Prof. Stanton Johnston V",
-        "username": "hbeier",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 2,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 2,
-            "name": "Procurement",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 3,
-        "name": "Maybelle Gulgowski",
-        "username": "whowell",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 3,
-        "change_password": 1,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T03:56:29.000000Z",
-        "divisi": {
-            "id": 3,
-            "name": "IT",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 4,
-        "name": "Roxane Roob",
-        "username": "ohara.carmela",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 1,
-        "change_password": 1,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T03:57:22.000000Z",
-        "divisi": {
-            "id": 1,
-            "name": "Payment",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 5,
-        "name": "Shanny Crona",
-        "username": "amya24",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 4,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 4,
-            "name": "Finance",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 6,
-        "name": "Mrs. Donna Rolfson",
-        "username": "rconroy",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 3,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 3,
-            "name": "IT",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 7,
-        "name": "Henri Roberts",
-        "username": "tdoyle",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 4,
-        "change_password": 1,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T03:58:22.000000Z",
-        "divisi": {
-            "id": 4,
-            "name": "Finance",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 8,
-        "name": "Prof. Ismael Von Jr.",
-        "username": "kautzer.danielle",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 2,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 2,
-            "name": "Procurement",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 9,
-        "name": "Horacio Nikolaus",
-        "username": "amina.daniel",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 3,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 3,
-            "name": "IT",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 10,
-        "name": "Rosella Weimann",
-        "username": "tstark",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 1,
-        "change_password": 0,
-        "created_at": "2023-04-11T02:38:43.000000Z",
-        "updated_at": "2023-04-11T02:38:43.000000Z",
-        "divisi": {
-            "id": 1,
-            "name": "Payment",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    },
-    {
-        "id": 12,
-        "name": "Reza Khoirul Wijaya Putra",
-        "username": "rezawp",
-        "email_verified_at": null,
-        "role": "user",
-        "division_id": 1,
-        "change_password": 1,
-        "created_at": "2023-04-11T04:55:00.000000Z",
-        "updated_at": "2023-04-11T04:55:20.000000Z",
-        "divisi": {
-            "id": 1,
-            "name": "Payment",
-            "created_at": "2023-04-11T02:38:43.000000Z",
-            "updated_at": "2023-04-11T02:38:43.000000Z"
-        }
-    }
-]
+    ]
+}

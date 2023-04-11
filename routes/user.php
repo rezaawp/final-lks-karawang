@@ -11,6 +11,11 @@ Route::middleware(['auth', 'user', 'password.change'])->group(function () {
         Route::get('/poll/{id}', 'show');
     });
 
+    Route::get('tes', function () {
+        $time = time() + 12 * (60 * 60);
+        return date('Y-m-d h:i:s', $time);
+    });
+
     Route::controller(VoteController::class)->group(function () {
         Route::post('vote', 'store')->name('vote.store');
     });

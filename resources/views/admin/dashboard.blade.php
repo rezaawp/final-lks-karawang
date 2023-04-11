@@ -31,7 +31,7 @@
                                 <h5 class="fw-bold text-center">Voting</h5>
 
                                 <div class="container d-flex justify-content-center mb-3" style="width: 100%">
-                                    <button class="btn btn-success btn-sm">Detail</button>
+                                    <button class="btn btn-success btn-sm" disabled>Detail</button>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                                 <h5 class="fw-bold text-center">Users</h5>
 
                                 <div class="container d-flex justify-content-center mb-3" style="width: 100%">
-                                    <button class="btn btn-success btn-sm">Detail</button>
+                                    <a href="{{ route('admin.users') }}" class="btn btn-success btn-sm">Detail</a>
                                 </div>
                             </div>
                         </div>

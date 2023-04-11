@@ -34,7 +34,6 @@
                 <div class="col-md-9 d-flex align-items-center justify-content-center flex-column">
                     @foreach ($poll['choises'] as $item)
                         <label for="{{ $item['id'] }}" class="my-3" style="width: 100%">
-                            {{ $poll['is_deadline'] }}
                             <div class="card p-3">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="form-check">
